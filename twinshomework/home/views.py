@@ -9,3 +9,26 @@ def homepage(request):
     return render(request=request,
                   template_name='home/homepage.html',
                   context={})
+
+
+def wsu(request):
+    return render(request=request,
+                  template_name='home/Ethan_WSU.html',
+                  context={})
+
+
+def harvard(request):
+    return render(request=request,
+                  template_name='home/ethan_harvard.html',
+                  context={})
+
+
+def bellvue(request):
+    return render(request=request,
+                  template_name='home/eric_bellvue.html',
+                  context={})
+
+def about(request):
+    return render(request=request,
+                  template_name='home/about.html',
+                  context={})
