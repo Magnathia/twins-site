@@ -32,3 +32,9 @@ def about(request):
     return render(request=request,
                   template_name='home/about.html',
                   context={})
+
+
+def caltech(request):
+    return render(request=request,
+                  template_name='home/eric_caltech.html',
+                  context={})
