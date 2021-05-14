@@ -23,9 +23,9 @@ def harvard(request):
                   context={})
 
 
-def bellvue(request):
+def bellevue(request):
     return render(request=request,
-                  template_name='home/eric_bellvue.html',
+                  template_name='home/eric_bellevue.html',
                   context={})
 
 def about(request):

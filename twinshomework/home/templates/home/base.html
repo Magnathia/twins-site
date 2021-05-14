@@ -23,20 +23,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/"><button type="button" class="btn btn-light btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off">Home</button></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Schools
+            <button type="button" class="btn btn-light btn-lg" Light data-toggle="button aria-pressed="false" autocomplete="off">Schools</button>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="/wsu">Washington State University</a></li>
-              <li><a class="dropdown-item" href="/harvard">Harvard</a></li>
-            <li><a class="dropdown-item" href="/bellvue">Bellvue</a></li>
-            <li><a class="dropdown-item" href="/caltech">Cal. Tech</a></li>
+            <li><a class="dropdown-item" href="/harvard">Harvard</a></li>
+            <li><a class="dropdown-item" href="/bellevue">Bellevue</a></li>
+            <li><a class="dropdown-item" href="/caltech">Caltech</a></li>
             </ul>
           <li class="nav-item">
-          <a class="nav-link" href="/about">About the Developers</a>
+          <a class="nav-link" href="/about"><button type="button" class="btn btn-light btn-lg" Light data-toggle="button aria-pressed="false" autocomplete="off">About the Developers</button></a>
         </li>
         </li>
       </ul>
@@ -44,8 +44,10 @@
   </div>
 </nav>
 <p style="padding: 5px 10px 15px 40px;"> <!-- //top right bottom left-->
-  {% block content %}
-  {% endblock %}
+  <div id="content">
+      {% block content %}
+      {% endblock %}
+  </div>
 </p>
   </div>
 </body>

@@ -2,11 +2,17 @@
 
 {% block content %}
 <div id="intro">
-<p>
-    Welcome to Eric and Ethan's site! Currently we are exporing which
-    colleges they would like to attend.
-</p>
-<p>
+<div class="d-flex flex-nowrap">
+  <div class="flex-last p-2">
+      <img id="ethan-pic" src="https://i.imgur.com/c1OoH7f.jpg" class="rounded float-left" alt="Ethan Kaasa" style="width:400px" "height:400px";>
+  </div>
+  <div class="p-2">
+      <div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">Welcome to Ethan and Eric's site! Currently we are exploring which
+    colleges they would like to attend.</p>
+  <hr class="my-4">
+  <p>
     My name is Ron Smith. I work as a developer and support for NOAA
     (National Oceanic and Atmospheric Administration) at Pacific Marine
     Environmental Laboratory.
@@ -14,16 +20,27 @@
 <p>
     My contribution to this project is the Django framework and this homepage.
     The school pages as well as the styling are ether BootStrap or custom styling
-    written by both Eric and Ethan. The site is hosted on my home server
-    on a domain issued by freenom. It has been my pleasure to mentor them in
+    written by both Ethan and Eric. The site is hosted on my home server
+    on a domain issued by Freenom. It has been my pleasure to mentor them in
     the beginning basics of web development.
 </p>
 <p>
-    Eric and Ethan have both created GitHub accounts to show their particular
-    contributions to this project and the final / complete project is hosted on mine.
+    Ethan and Eric have both created GitHub accounts to show their particular
+    contributions to this project, and the final project is hosted on mine.
 </p>
-</div>
+  <p class="lead">
+    <div class="align-self-center">
+        <a class="btn btn-primary btn-lg" href="/about" role="button">Learn more</a>
+    </div>
+  </p>
 
+</div>
+  </div>
+  <div class="flex-first p-2">
+      <img src="https://i.imgur.com/o6iGOz7.jpg" alt="Eric Kaasa" style="width:400px"; style="height:400px";>
+  </div>
+</div>
+</div>
 
 
 {% endblock %}
